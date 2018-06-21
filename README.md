@@ -4,7 +4,7 @@ Use best practices for prompting users to leave a review for your app in the App
 
 ## Overview
 
-Presenting the user with a request for an App Store review using [SKStoreReviewController](https://developer.apple.com/documentation/storekit/skstorereviewcontroller) is a good way to get feedback on your app. However, you should be aware that the prompt will only be displayed to a user a maximum of three times within a 365-day period. Choosing when and where to display this prompt is critical to your success using this API.   
+Presenting the user with a request for an App Store review using [`SKStoreReviewController`](https://developer.apple.com/documentation/storekit/skstorereviewcontroller) is a good way to get feedback on your app. However, you should be aware that the prompt will only be displayed to a user a maximum of three times within a 365-day period. Choosing when and where to display this prompt is critical to your success using this API.   
 
 This sample project consists of a simulated three-step process. The user first taps the "Start Process" button, then taps "Continue Process" twice to finally be presented with a "Process Completed" view controller scene. The request for review is only shown to the user from this scene.
 
@@ -14,7 +14,7 @@ In addition, the following conditions need to be met before the prompt is displa
 * The multistep process mentioned above must be successfully completed at least four times. This number is arbitrary and you should choose something that fits well with how many times the user is likely to complete a process in your app.
 * Finally, the user must pause on the "Process Completed" scene for a few seconds. This requirement limits the possibility of the prompt interrupting the user if they are about to move to a different task in your application straight away.
 
-The conditions above exist purely to delay the call to [requestReview()](https://developer.apple.com/documentation/storekit/skstorereviewcontroller/2851536-requestreview) and so days, weeks, or potentially even months could elapse without a user being prompted to review your app. Techniques to delay the call are valuable as they will cause it to be shown to more experienced users that are getting real value from using your app.
+The conditions above exist purely to delay the call to [`requestReview()`](https://developer.apple.com/documentation/storekit/skstorereviewcontroller/2851536-requestreview) and so days, weeks, or potentially even months could elapse without a user being prompted to review your app. Techniques to delay the call are valuable as they will cause it to be shown to more experienced users that are getting real value from using your app.
 
 ## Present the Review Request
 
@@ -23,7 +23,7 @@ Spend some time thinking about the best places within your own app to show a req
 * Try to make the request at a time that will not interrupt what the user is trying to achieve in your app. For example, at the end of a sequence of events that the user has successfully completed.
 * Avoid showing a request for a review immediately when a user launches your app, even if it is not the first time that it launches.
 
-Also remember that the user can disable requests for reviews from *ever* appearing on their device, so you should avoid referring to your app showing this prompt and never request a review using [requestReview()](https://developer.apple.com/documentation/storekit/skstorereviewcontroller/2851536-requestreview) as the result of a user action.
+Also remember that the user can disable requests for reviews from *ever* appearing on their device, so you should avoid referring to your app showing this prompt and never request a review using [`requestReview()`](https://developer.apple.com/documentation/storekit/skstorereviewcontroller/2851536-requestreview) as the result of a user action.
 
 ``` swift
 // If the count has not yet been stored, this will return 0
@@ -53,7 +53,7 @@ if count >= 4 && currentVersion != lastVersionPromptedForReview {
 ```
 [View in Source](x-source-tag://RequestReview)
 
-In this code sample the usage data used to delay the review request is stored in [UserDefaults](https://developer.apple.com/documentation/foundation/userdefaults). In your app there may be more appropriate on-device storage options. 
+In this code sample the usage data used to delay the review request is stored in [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults). In your app there may be more appropriate on-device storage options. 
 
 Further information on best practices for requesting reviews can be found in the [ratings and reviews](https://developer.apple.com/ios/human-interface-guidelines/system-capabilities/ratings-and-reviews/) section of the [Human Interface Guidelines](https://developer.apple.com/ios/human-interface-guidelines/).
 
