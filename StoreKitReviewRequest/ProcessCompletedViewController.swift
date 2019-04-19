@@ -12,10 +12,10 @@ class ProcessCompletedViewController: UIViewController {
 
     // MARK: View lifecycle
 
+    /// - Tag: RequestReview
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        /// - Tag: RequestReview
         // If the count has not yet been stored, this will return 0
         var count = UserDefaults.standard.integer(forKey: UserDefaultsKeys.processCompletedCountKey)
         count += 1
