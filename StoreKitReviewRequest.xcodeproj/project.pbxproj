@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A77DFF72720C16B002209D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A77DFF62720C16B002209D2 /* SceneDelegate.swift */; };
 		5577A8E1209CE818007A9994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577A8E0209CE818007A9994 /* AppDelegate.swift */; };
 		5577A8E6209CE818007A9994 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5577A8E4209CE818007A9994 /* Main.storyboard */; };
 		5577A8E8209CE818007A9994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5577A8E7209CE818007A9994 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A77DFF62720C16B002209D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		264FC0BC743E94E494612966 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
 		5577A8DD209CE818007A9994 /* StoreKitReviewRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoreKitReviewRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5577A8E0209CE818007A9994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				5577A8E0209CE818007A9994 /* AppDelegate.swift */,
+				1A77DFF62720C16B002209D2 /* SceneDelegate.swift */,
 				5577A8F6209D014D007A9994 /* InitialViewController.swift */,
 				5577A8F4209CFB61007A9994 /* ProcessCompletedViewController.swift */,
 				5577A8F8209D0BA3007A9994 /* UserDefaultsKeys.swift */,
@@ -121,7 +124,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
 					5577A8DC209CE818007A9994 = {
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A77DFF72720C16B002209D2 /* SceneDelegate.swift in Sources */,
 				5577A8F9209D0BA3007A9994 /* UserDefaultsKeys.swift in Sources */,
 				5577A8F7209D014D007A9994 /* InitialViewController.swift in Sources */,
 				5577A8E1209CE818007A9994 /* AppDelegate.swift in Sources */,
@@ -223,6 +227,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -248,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +289,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -303,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
